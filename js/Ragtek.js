@@ -16,8 +16,7 @@ $.each(repos, function (i, v) {
     issues = repo.issues('open', function (i) {
         $.each(i, function (i, issue) {
             console.log(issue);
-            console.log(issue['labels']);
-            $elem = $( '<li>[' + issue['labels'][0] + '] <a href="' + issue['html_url'] + '">'   + issue['title'] + '</a> ( ' + issue['repo']['name'] +')</li>');
+            $elem = $( '<li>[' + issue['labels'][0] + '] <a href="' + issue['html_url'] + '" rel="tooltip" title="' +issue['body'] + '">'   + issue['title'] + '</a> ( ' + issue['repo']['name'] +')</li>');
 
             $issuesContainer.append($elem);
         })
@@ -25,3 +24,7 @@ $.each(repos, function (i, v) {
 
 })
 $issuesContainer.html(issuesForOutPut);
+
+$('#issues').tooltip({
+    selector: "a[rel=tooltip]"
+})
