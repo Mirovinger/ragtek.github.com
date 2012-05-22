@@ -1,20 +1,62 @@
 <html>
 <head>
     <title>ragtek add-ons</title>
-    <script type="text/javascript"  src="http://ajax.googleapis.com/ajax/libs/jquery/1.7.2/jquery.min.js"></script>
+    <script type="text/javascript" src="http://ajax.googleapis.com/ajax/libs/jquery/1.7.2/jquery.min.js"></script>
+
+
+    <link href="assets/css/bootstrap.css" rel="stylesheet">
+    <style type="text/css">
+        body {
+            padding-top: 60px;
+            padding-bottom: 40px;
+        }
+    </style>
+
+
+    <!--[if lt IE 9]>
+    <script src="http://html5shim.googlecode.com/svn/trunk/html5.js"></script>
+    <![endif]-->
 </head>
 <body>
+<div class="navbar navbar-fixed-top">
+    <div class="navbar-inner">
+        <div class="container-fluid">
+            <a class="btn btn-navbar" data-toggle="collapse" data-target=".nav-collapse">
+                <span class="icon-bar"></span>
+                <span class="icon-bar"></span>
+                <span class="icon-bar"></span>
+            </a>
+            <a class="brand" href="#">My Add-ons</a>
 
 
-    XenForo Add-ons
-    <ol id ="xf_addons" class="addonlist XenForo">
-        <li><a href="https://github.com/ragtek/AQR/wiki">Attachment QR Codes</a></li>
-        <li><a href="https://github.com/ragtek/TO/wiki">Set Forum Thread Order</a></li>
-        <li><a href="https://github.com/ragtek/InfoPage">Info Page</a></li>
-        <li><a href="https://github.com/ragtek/GCT">Global Create Thread Formular</a></li>
-        <!--
-        <li><a href="${addonUrl}">${addonName}</a></li>
-        -->
-    </ol>
+        </div>
+    </div>
+</div>
+<div class="container">
+
+    <div class="row">
+        <div class="span4">
+            <h2>XenForo Add-ons</h2>
+            <ol id="xf_addons" class="addonlist XenForo">
+                <li><a href="https://github.com/ragtek/AQR/wiki">Attachment QR Codes</a></li>
+                <li><a href="https://github.com/ragtek/TO/wiki">Set Forum Thread Order</a></li>
+                <li><a href="https://github.com/ragtek/InfoPage">Info Page</a></li>
+                <li><a href="https://github.com/ragtek/GCT">Global Create Thread Formular</a></li>
+                <!--
+                <li><a href="${addonUrl}">${addonName}</a></li>
+                -->
+            </ol>
+            <p><a class="btn" href="http://xenforo.com/community/resources/authors/ragtek.82/">View details &raquo;</a></p>
+        </div>
+        <div class="span4">
+            <h2>vBulletin Add-ons</h2>
+
+            <p>TBA</p>
+
+            <p><a class="btn" href="http://www.vbulletin-germany.org/member.php?12-ragtek&tab=releases#releases">View details &raquo;</a></p>
+        </div>
+    </div>
+</div>
+<script src="assets/js/bootstrap.min.js"></script>
 </body>
 </html>
