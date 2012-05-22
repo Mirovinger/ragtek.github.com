@@ -2,7 +2,12 @@ var user = new GitHub.User("ragtek");
 var issuesForOutPut = {};
 var repos = [
     'ragtek.github.com',
-    'GCT'
+    'GCT',
+    'InfoPage',
+     'WHW',
+    'AQR',
+    'TO'
+
 ];
 $issuesContainer = $('#placeholder');
 
@@ -11,8 +16,8 @@ $.each(repos, function (i, v) {
     issues = repo.issues('open', function (i) {
         $.each(i, function (i, issue) {
             console.log(issue);
-
-            $elem = $( '<li><a href="' + issue['html_url'] + '">'   + issue['title'] + '</a> ( ' + issue['repo']['name'] +')</li>');
+            console.log(issue['labels']);
+            $elem = $( '<li>[' + issue['labels'][0] + '] <a href="' + issue['html_url'] + '">'   + issue['title'] + '</a> ( ' + issue['repo']['name'] +')</li>');
 
             $issuesContainer.append($elem);
         })
