@@ -5,9 +5,31 @@
 
     <link href="assets/css/bootstrap.min.css" rel="stylesheet">
     <style type="text/css">
-        body {
+        .wrapper > .container {
             padding-top: 60px;
-            padding-bottom: 40px;
+        }
+
+            /* Sticky Footer
+           -------------------------------------------------- */
+        html, body {
+            height: 100%;
+        }
+        footer {
+            color: #666;
+            background: #222;
+            height: 40px;
+        }
+        footer a {
+            color: #999;
+        }
+        footer a:hover {
+            color: #efefef;
+        }
+        .wrapper {
+            min-height: 100%;
+            height: auto !important;
+            height: 100%;
+            margin: 0 auto -40px;
         }
     </style>
     <!--[if lt IE 9]>
@@ -44,43 +66,51 @@
         </div>
     </div>
 </div>
-<div class="container">
 
-    <div class="row">
-        <div class="span4">
-            <h2>XenForo Add-ons</h2>
-            <ol id="xf_addons" class="addonlist XenForo">
-                <li><a href="https://github.com/ragtek/AQR/wiki">Attachment QR Codes</a></li>
-                <li><a href="https://github.com/ragtek/TO/wiki">Set Forum Thread Order</a></li>
-                <li><a href="https://github.com/ragtek/InfoPage">Info Page</a></li>
-                <li><a href="https://github.com/ragtek/GCT">Global Create Thread Formular</a></li>
-                <!--
-                <li><a href="${addonUrl}">${addonName}</a></li>
-                -->
-            </ol>
-            <p><a class="btn" href="http://xenforo.com/community/resources/authors/ragtek.82/">View details &raquo;</a>
-            </p>
+<div class="wrapper">
+    <div class="container" id="content">
+        <div class="row">
+            <div class="span4">
+                <h2>XenForo Add-ons</h2>
+                <ol id="xf_addons" class="addonlist XenForo">
+                    <li><a href="https://github.com/ragtek/AQR/wiki">Attachment QR Codes</a></li>
+                    <li><a href="https://github.com/ragtek/TO/wiki">Set Forum Thread Order</a></li>
+                    <li><a href="https://github.com/ragtek/InfoPage">Info Page</a></li>
+                    <li><a href="https://github.com/ragtek/GCT">Global Create Thread Formular</a></li>
+                    <!--
+                    <li><a href="${addonUrl}">${addonName}</a></li>
+                    -->
+                </ol>
+                <p><a class="btn" href="http://xenforo.com/community/resources/authors/ragtek.82/">View details &raquo;</a>
+                </p>
+            </div>
+            <div class="span4">
+                <h2>vBulletin Add-ons</h2>
+
+                <p>TBA</p>
+
+                <p><a class="btn" href="http://www.vbulletin-germany.org/member.php?12-ragtek&tab=releases#releases">View
+                    details &raquo;</a></p>
+            </div>
         </div>
-        <div class="span4">
-            <h2>vBulletin Add-ons</h2>
 
-            <p>TBA</p>
+    </div>
+    <div class="row">
+        <div id="issues" class="span6 modal-body">
+            <h2>Issues & Requests</h2>
+            <ol>
+                <div id="placeholder"></div>
+            </ol>
 
-            <p><a class="btn" href="http://www.vbulletin-germany.org/member.php?12-ragtek&tab=releases#releases">View
-                details &raquo;</a></p>
         </div>
     </div>
 </div>
-<div class="row">
-    <div id="issues" class="span6 modal-body">
-        <h2>Issues & Requests</h2>
-        <ol>
-            <div id="placeholder"></div>
-        </ol>
+
+<footer>
+    <div class="container">
 
     </div>
-    </div>
-
+</footer>
 <script type="text/javascript" src="http://ajax.googleapis.com/ajax/libs/jquery/1.7.2/jquery.min.js"></script>
 <script type="text/javascript" src="js/jsclass.js"></script>
 <script type="text/javascript" src="js/github_issues.js"></script>
