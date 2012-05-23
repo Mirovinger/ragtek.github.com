@@ -1,25 +1,35 @@
 <html xmlns="http://www.w3.org/1999/html">
 <head>
     <title>ragtek add-ons</title>
-    <script type="text/javascript" src="http://ajax.googleapis.com/ajax/libs/jquery/1.7.2/jquery.min.js"></script>
 
 
-    <link href="assets/css/bootstrap.css" rel="stylesheet">
+    <link href="assets/css/bootstrap.min.css" rel="stylesheet">
     <style type="text/css">
         body {
             padding-top: 60px;
             padding-bottom: 40px;
         }
     </style>
-    <!-- Combo-handled YUI JS files: -->
-    <script type="text/javascript" src="http://yui.yahooapis.com/combo?2.7.0/build/yahoo-dom-event/yahoo-dom-event.js&2.7.0/build/treeview/treeview-min.js"></script>
-
-    <script type="text/javascript" src="js/jsclass.js"></script>
-     <script type="text/javascript" src="js/github_issues.js"></script>
-
     <!--[if lt IE 9]>
     <script src="http://html5shim.googlecode.com/svn/trunk/html5.js"></script>
     <![endif]-->
+
+
+
+<!-- repos start -->
+    <script type="text/javascript">
+        var repos = [
+            'ragtek.github.com',
+            'GCT',
+            'InfoPage',
+            'WHW',
+            'AQR',
+            'TO',
+            'devtools'
+        ];
+    </script>
+<!-- repos end -->
+
 </head>
 <body>
 <div class="navbar navbar-fixed-top">
@@ -48,28 +58,33 @@
                 <li><a href="${addonUrl}">${addonName}</a></li>
                 -->
             </ol>
-            <p><a class="btn" href="http://xenforo.com/community/resources/authors/ragtek.82/">View details &raquo;</a></p>
+            <p><a class="btn" href="http://xenforo.com/community/resources/authors/ragtek.82/">View details &raquo;</a>
+            </p>
         </div>
         <div class="span4">
             <h2>vBulletin Add-ons</h2>
 
             <p>TBA</p>
 
-            <p><a class="btn" href="http://www.vbulletin-germany.org/member.php?12-ragtek&tab=releases#releases">View details &raquo;</a></p>
+            <p><a class="btn" href="http://www.vbulletin-germany.org/member.php?12-ragtek&tab=releases#releases">View
+                details &raquo;</a></p>
         </div>
     </div>
 </div>
+<div class="row">
+    <div id="issues" class="span6 modal-body">
+        <h2>Issues & Requests</h2>
+        <ol>
+            <div id="placeholder"></div>
+        </ol>
 
-<div id="issues" class="span4 modal-body">
-  <h2>Issues & Requests</h2>
-    <ol>
-        <div id="placeholder"></div>
-    </ol>
+    </div>
+    </div>
 
-</div>
-
-
-<script src="assets/js/bootstrap.min.js"></script>
-<script src="js/Ragtek.js"></script>
+<script type="text/javascript" src="http://ajax.googleapis.com/ajax/libs/jquery/1.7.2/jquery.min.js"></script>
+<script type="text/javascript" src="js/jsclass.js"></script>
+<script type="text/javascript" src="js/github_issues.js"></script>
+    <script src="assets/js/bootstrap.min.js"></script>
+    <script src="js/Ragtek.js"></script>
 </body>
 </html>
