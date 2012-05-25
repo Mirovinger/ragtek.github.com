@@ -21,7 +21,6 @@ $.each(repos, function (i, v) {
     });
 
 })
-$issuesContainer.html(issuesForOutPut);
 
 $('#issues').popover({
     selector: "a[rel=popover]",placement: "top"
