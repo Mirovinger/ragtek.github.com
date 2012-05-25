@@ -25,7 +25,7 @@
     <!-- repos end -->
 
 </head>
-<body>
+<body data-spy="scroll" data-target=".subnav" data-offset="50">
 <div class="navbar navbar-fixed-top">
     <div class="navbar-inner">
         <div class="container-fluid">
@@ -39,51 +39,53 @@
     </div>
 </div>
 
-<div class="wrapper">
-    <div class="container" id="content">
-        <div class="row">
-            <div class="span4">
-                <h2>XenForo Add-ons</h2>
-                <ol id="xf_addons" class="addonlist XenForo">
-                    <li><a href="https://github.com/ragtek/AQR/wiki">Attachment QR Codes</a></li>
-                    <li><a href="https://github.com/ragtek/TO/wiki">Set Forum Thread Order</a></li>
-                    <li><a href="https://github.com/ragtek/InfoPage">Info Page</a></li>
-                    <li><a href="https://github.com/ragtek/GCT">Global Create Thread Formular</a></li>
-                    <!--
-                    <li><a href="${addonUrl}">${addonName}</a></li>
-                    -->
-                </ol>
-                <p><a class="btn" href="http://xenforo.com/community/resources/authors/ragtek.82/">View
-                    details &raquo;</a>
-                </p>
-            </div>
-            <div class="span4">
-                <h2>vBulletin Add-ons</h2>
 
-                <p>TBA</p>
-
-                <p><a class="btn" href="http://www.vbulletin-germany.org/member.php?12-ragtek&tab=releases#releases">View
-                    details &raquo;</a></p>
-            </div>
-        </div>
-
-    </div>
+<div class="container">
     <div class="row">
-        <div id="issues" class="span6 modal-body">
+        <div class="span6">
+            <h2>News</h2>
+
+            <p>I've started creating documentations for the add-ons.<br/>If you want to help, feel free to contact me. I
+                would be more then happy:)</p>
+        </div>
+        <div id="issues" class="span6">
             <h2>Issues & Requests</h2>
 
-                <div id="placeholder"></div>
-
-
+            <table id="placeholder"></table>
         </div>
     </div>
-</div>
 
-<footer>
-    <div class="container">
+<br />
+
+    <div class="row">
+
+        <div class="span6">
+            <h2>XenForo Add-ons</h2>
+            <ol id="xf_addons" class="addonlist XenForo">
+                <li><a href="https://github.com/ragtek/AQR/wiki">Attachment QR Codes</a></li>
+                <li><a href="https://github.com/ragtek/TO/wiki">Set Forum Thread Order</a></li>
+                <li><a href="https://github.com/ragtek/InfoPage">Info Page</a></li>
+                <li><a href="https://github.com/ragtek/GCT">Global Create Thread Formular</a></li>
+                <!--
+                <li><a href="${addonUrl}">${addonName}</a></li>
+                -->
+            </ol>
+            <p><a class="btn" href="http://xenforo.com/community/resources/authors/ragtek.82/">View
+                details &raquo;</a>
+            </p>
+        </div>
+        <div class="span6">
+            <h2>vBulletin Add-ons</h2>
+            <p>TBA</p>
+            <p><a class="btn" href="http://www.vbulletin-germany.org/member.php?12-ragtek&tab=releases#releases">View
+                details &raquo;</a></p>
+        </div>
 
     </div>
-</footer>
+
+</div>
+
+
 <script type="text/javascript" src="http://ajax.googleapis.com/ajax/libs/jquery/1.7.2/jquery.min.js"></script>
 <script type="text/javascript" src="js/jsclass.js"></script>
 <script type="text/javascript" src="js/github_issues.js"></script>
