@@ -1,7 +1,7 @@
 var GitHub = {};
 
 // Base uri
-GitHub.Base = 'http://github.com/api/v2/json/';
+GitHub.Base = 'https://api.github.com/';
 
 GitHub.Helpers = {
     empty: function(){},

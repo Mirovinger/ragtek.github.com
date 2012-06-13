@@ -4,7 +4,9 @@ $issuesContainer = $('#placeholder');
 $.each(repos, function (i, v) {
     var repo = user.repo(v);
     issues = repo.issues('open', function (i) {
+        console.log(i);
         $.each(i, function (i, issue) {
+            console.log(issue);
             if (issue['labels'][0] == 'bug'){
                 $prefix ='<span class="label label-important">Bug</span>';
             }
