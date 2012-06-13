@@ -1,6 +1,6 @@
 var user = new GitHub.User("ragtek");
 $issuesContainer = $('#placeholder');
-
+$issuesContainer.append($("<tr><td>Problemconnecting to bug tracker API....</td></tr>"))
 $.each(repos, function (i, v) {
     var repo = user.repo(v);
     issues = repo.issues('open', function (i) {
