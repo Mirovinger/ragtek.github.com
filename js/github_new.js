@@ -7,7 +7,7 @@ Ragtek.Base = 'https://api.github.com/repos/ragtek/';
 
 function getIssues($project){
      $.ajax({
-        url: Ragtek.Base,
+        url: Ragtek.Base + $project,
         dataType: "jsonp",
         crossDomain: true,
         success: function(returndata) {
