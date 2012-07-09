@@ -6,12 +6,14 @@ Ragtek.Base = 'https://api.github.com/repos/ragtek/';
 
 
 function getIssues($project){
-    $issues = $.getJSON(
-        Ragtek.Base + $project + '/issues', function(f){
-            console.log(f);
+     $.ajax({
+        url: Ragtek.Base,
+        dataType: "jsonp",
+        crossDomain: true,
+        success: function(returndata) {
+            console.log(returndata);
         }
-
-    );
+    });
 }
 
   $issues = getIssues('NUNS');
